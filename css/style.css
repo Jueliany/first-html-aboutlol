@@ -1,0 +1,224 @@
+             *{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				width: 100%;
+				margin: 0 auto;
+				font-size:14px ;
+				background-image: url(../img/bing.jpg);
+					background-position: center;
+					background-attachment:  fixed;
+					color: white;
+				
+			}
+			footer{
+				
+			
+			}
+		     footer>div{
+		     	margin-top:-1.2em ;
+				width: 100%;
+				height: 60px;
+				text-align: center;
+				background-color: #121112;
+				line-height: 30px
+				;
+				display: block;
+				width: 100%;
+			}
+			 footer>div>div{
+			 	color: #d8a243;
+		     	font-size: 0.85em;
+				width: 100%;
+				height: 28px;
+				text-align: center;
+				background-color: #121112;
+				line-height: 30px
+				;
+				display: block;
+			}
+		
+		     .load{
+		     	height: 65px;
+				width: 80px;
+				float:right;
+				position: relative;
+			
+				margin: 8px;
+		     }
+			.m{
+				width:100%;
+				height: 40%;
+				position: relative;
+				margin: 0 auto;
+			}
+			.top{
+				width: 100%;
+				height: 80px;
+				background-color: #0b0b0b;
+				
+				
+				text-align:center;
+				display:-webkit-box;
+				display:-moz-box;
+				display:-ms-flexbox;
+				display:-webkit-flex;
+				display:flex;
+				-webkit-flex-flow:row wrap;
+				justify-content:center;
+				margin-top:0px ;
+				
+				-webkit-justify-content:space-between;
+				justify-content:space-between;
+				
+				
+			}
+			.logo{
+				width: 150px;
+				height: 50px;
+				float: left;
+				margin-left: 20px;
+				margin-top: 12px;
+				display: block;
+			}
+			.toplistx{
+				
+				
+				
+			}
+			.toplist{
+				list-style: none;
+				
+				
+			}
+			img{
+				
+			}
+			.toplist>li{
+
+				
+				text-align: center;
+				width: 85px;
+				height: 58px;
+				float: left;
+				
+				padding-bottom:20px ;
+				margin: 0px 18px ;
+			}
+			
+
+			
+				
+				
+			
+			.toplist a{
+				width: 85px;
+				height: 100%;
+				text-decoration: none;
+				color: #d8a243;
+				font-family: "微软雅黑";
+				font-weight: normal;
+				display:block;
+				text-decoration:none;display:block;
+				
+				
+			}
+			.toplist h2{
+				margin-top:20px ;
+				display: block;
+				font-weight:normal ;
+				font-size:1em ;
+				
+				
+			}
+			.toplist p{
+				display: block;
+				font-weight:normal ;
+				font-size:0.9em ;
+				line-height: 10px;
+				
+			}
+			.toplist>li:hover{
+				
+				border-bottom:1px solid #d8a243;
+			}
+			.toplist a:hover{
+				color:white;
+			}
+			@media  (min-width: 850px) {
+				.top li{
+					width: 100px;
+				}
+			}
+			@media  (min-width: 640px) and (max-width: 850px) {
+				.logo{
+					display: none;
+				}
+			}
+			@media (min-width: 499px) and (max-width: 639px ) {
+				.logo{
+					display: none;
+				}
+				.load{
+					display: none;
+				}
+			}
+			@media (max-width: 498px ) {
+				.top {
+					height: 163px;
+					width: 100%;
+					margin-bottom:0px ;
+					margin-top: 0px;
+				}
+				.top p{
+					
+					display: none;
+				}
+				.top h2{
+				  margin: 0 auto;
+					padding: 0px;
+					line-height: 40px;
+					
+				}
+				.top *{
+					margin: 0px auto;
+					padding: 0px;
+				}
+				.top ul{
+					height: 40px;
+					margin: 0 auto;
+					width: 100%;
+					
+				}
+				.toplistx{
+				width: 100%;
+				}
+				.top li{
+					margin: 0 auto;
+					padding: 0px;
+					height: 40px;
+					width: 100%;
+					border-bottom: 1px solid sandybrown;
+					
+				}
+				.logo{
+					display: none;
+				}
+				.load{
+					display: none;
+				}
+				.toplist>li:hover{
+				
+				background-color: #d8a243;
+			}
+			footer ul{
+				display: none;
+			}
+			 footer>div{
+		     	
+				height:60px;
+				
+			}
+			}
+			

@@ -2,61 +2,728 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>这是一个测试网页</title>
+			<meta name="KeyWords" content="英雄联盟">
+			<meta name="Author" content="陈志远">
+		<title>首页</title>
+		<script src="js/jquery-1.6.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+
+
+
+<script type="text/javascript" src="js/main.js">
+
+</script>
+
+		
+		
+		<link rel="stylesheet" href="css/style.css">
 		<style>
+			
+			header{
+				margin-bottom: -3px;
+			}
 			body{
-				margin: 0 auto;
-				width: 500px;
+				margin: 0px auto;
+				background-color: white;
+			}
+			.cent{
+				width: 100%;
+				background-color:white ;
+				 filter:alpha(opacity=50);  
+				 opacity: 0.9;
+			}
+			center{
+					text-align:center;
+				   width: 100%;
+				   margin:0 auto;   
+                  
+    
+				background-color:white ;
+				 filter:alpha(opacity=50);  
+				 opacity: 0.99;
+      
+			}
+			center div{
+				float: left;
+			}
+			.main_banner{
+				width: 800px;
+				height: 400px;
+				box-sizing: border-box;
+				background-color:rgb(255,255,255,0.5);
+				margin-left:20px ;
 				
 			}
-			.d11{
-				height: 20px;
-				width: 100%;
-				background-color: green;
-			}
-			.d22{
-				height: 100px;
-				width: 100%;
-			}
-			h1{
-				margin-left:20PX ;
-			}
-			.tdd td{
-				border: solid 2px;
-				height: 20px;
-				width: 350px;
-				text-align:left;
-			}
-			.ps{
+			.main_list{
+				width: 400px;
+				height: 400px;
+				margin-left: 20px;
 				
 			}
+			#banner { position: relative; width: 800px; height: 400px; border: 1px solid #666; overflow: hidden;background-color: black; filter: Alpha(Opacity=40); }
+
+			#banner_list img { border: 0px; }
+
+			#banner_bg { position: absolute; bottom: 0; background-color: #000; height: 50px;  z-index: 1000; cursor: pointer; width: 800px; }
+
+			#banner_info { position: absolute; bottom: 0; left: 5px; height: 22px; color: #fff; z-index: 1001; cursor: pointer; }
+
+			#banner_text { position: absolute; width: 500px; z-index: 1002; right: 3px; bottom: 3px; }
+
+			#banner ul { ; position: absolute; list-style-type: none; filter: Alpha(Opacity=80); opacity: 0.8; z-index: 1002; margin: 0; padding: 0; bottom: 0px; right: 0px; }
+
+			#banner ul li {text-align:center;
+			border: 0px;
+			padding: 0px; 
+			height: 50px; 
+			width:160px;
+			margin:0px;
+			float: left;
+			 display: block;
+			  color: #FFF; 
+			  background: #303030;
+			  line-height: 50px;
+			   }
+
+			#banner ul li.on { background-color: #000; }
+
+			#banner_list a { position: absolute; }
+			
+			center li:first a{
+				
+			}
+			center .main_top1 {
+				
+				background-color: white;
+				 filter:alpha(opacity=50);  	
+				 opacity: 0.9;
+				height: 60px;
+				width: 100%;
+				margin-bottom:30px ;
+				border-bottom: 0px groove gainsboro;
+				box-shadow: 3px 3px 3px gainsboro;
+			}
+			
+			center .main_top1 ul{
+				color: black;
+				list-style: none;
+				width: 600px;
+				padding-left: 30px;
+				 ;
+			}
+			center .main_top1 li{
+				float: left;
+				width: 25%;
+				line-height: 60px;
+				font-size:1.6em ;
+				font-family: "宋体";
+				
+			}
+			center .main_top1 a{
+				width: 100%;
+				height: 100%;
+				 	text-decoration:none;display:block;
+				 	color: black;
+				 	font-family: "微软雅黑";
+			}
+			center .main_top1 a:hover{
+				
+			
+				color: #d8a243;
+				border-bottom: 2px solid #d8a243;
+				
+			}
+			center .main_top2 {
+				
+				background-color: white;
+				 filter:alpha(opacity=50);  	
+				 opacity: 0.9;
+				height: 50px;
+				width: 100%;
+				
+			
+				box-shadow: 0px 3px 3px gainsboro;
+			}
+			.main_top2_list{
+				width: 80%;
+			}
+			center .main_top2 ul{
+				color: black;
+				list-style: none;
+				width: 100%;
+				
+				
+			}
+			center .main_top2 li{
+				float: left;
+				width: 25%;
+				line-height: 50px;
+				font-size:1.4em ;
+				padding: 0px;
+				margin: 0px;
+				
+				
+			}
+			#main3 li{
+				width: 33%;
+				
+			}
+			
+			center .main_top2 a{
+				width: 100%;
+				height: 100%;
+				 	text-decoration:none;display:block;
+				 	color: gray;
+				 	font-family: "微软雅黑";
+				 	margin: 0px;
+			}
+			center .main_top2  a:hover{
+				
+			
+				color: #d8a243;
+				border-bottom: 3px solid #d8a243;
+			}
+			
+		    .main_top2 p{
+		    	width: 20%;
+		    	display: block;
+		    	float:left ;
+		    	line-height: 30px;
+		    	
+		    	font-family: "微软雅黑";
+		    	font-size: 1.8em
+		    	;
+		    	color: black;
+		    }
+		
+		
+		
+			.lists{
+				width: 100%;
+				display:-webkit-box;
+				display:-moz-box;
+				display:-ms-flexbox;
+				display:-webkit-flex;
+				display:flex;
+				-webkit-flex-flow:row wrap;
+				justify-content:space-between;
+				margin-top:0px ;
+				
+				-webkit-justify-content:space-around;
+				justify-content:space-between;
+			}
+			
+			.new_list{
+				width: 800px;
+				height: 650px;
+				box-sizing: border-box;
+				background-color:rgb(255,255,255,0.5);
+				margin-top: 40px;
+				margin-left:20px ;
+				
+			}
+			
+             .news{
+             	margin-top:20px ;
+             	width: 100%;
+             }
+             .bigg{
+             	height: 100%;
+             	width: 100%;
+             }
+			.bignew *{
+				display: block;
+				float: left;
+				text-align: left;
+			}
+			.bignew{
+			    width: 100%;
+				height: 120px;
+				
+				color: #0B0B0B;
+				text-decoration: none;
+				
+			}
+			.bignew img{
+				height: 120px;
+				width: 200px;
+			}
+			
+			.bignew H1{
+				width: 580px;
+				margin-left: 20px;
+				margin-top: 5px;
+				font-size: 2.2em;
+				
+			}
+			.bignew p{
+				width: 580px;
+				margin-left: 20px;
+				color: #666666;
+			}
+			.elsenews{
+				margin-top: 25px;
+				height: 400px;
+				width: 100%;
+				
+			}
+			.elsenews ul{
+				
+				list-style: none;
+				float: left;
+			}
+			.elsenews li{
+				margin-top:4px ;
+				list-style: none;
+				float: left;
+			}
+			.elsenews a{
+				font-size: 1.1em;
+				width: 800px;
+				height: 36px;
+				
+				color: #0B0B0B;
+				text-decoration: none;
+			}
+			.elsenews a>div{
+				width: 800px;
+				height: 36px;
+				
+			}
+			.elsenews a>div div{
+				line-height: 36px;
+				width: 68px;
+				height: 36px;
+				background-color: #f1f1f1;
+				color: #858585;
+			}
+			.elsenews a>div p{
+				line-height: 36px;
+				margin-left: 20px;
+				height: 36px;
+				float: left;
+				color: #666666;
+				display: block;
+				
+			}
+			.elsenews a>div span{
+				line-height: 36px;
+				width: 68px;
+				height: 36px;
+				color: #bbbbbb;
+				float: right;
+				display: block;
+			}
+			
+			.elsenews a:hover >div div{
+				background-color: #d1ab57;
+				color: white;
+			}
+			.elsenews a:hover >div p{
+				color: #d1ab57;
+				
+			}
+			.game_list{
+				margin-top: 40px;
+				width: 400px;
+				height: 650px;
+				margin-left: 20px;
+				
+				
+			}
+			.hero_list{
+				
+				width: 100%;
+				height:400px ;
+				display:-webkit-box;
+				display:-moz-box;
+				display:-ms-flexbox;
+				display:-webkit-flex;
+				display:flex;
+				-webkit-flex-flow:row wrap;
+				justify-content:space-between;
+				margin-top:10px ;
+				
+				-webkit-justify-content:space-around;
+				justify-content:space-between;
+				
+			}
+			.hero_list img{
+				margin-top: 10px ;
+				
+				width: 195px;
+				height: 72px;
+			}
+			.tms
+			{
+				margin-top: 50px;
+			}
+			@media  (min-width: 856px){
+				body{
+					width:1260px;
+					
+				}
+				
+			
+			}
+			@media  (max-width: 856px){
+				body{
+					width:100%;
+					
+				}
+				.bignew{
+					display: none;
+				}
+				.main_banner{
+					display: none;
+				}
+				.main_top1{
+					display: none;
+				}
+				.main_top2{
+					display: none;
+				}
+			    .dow{
+			    	display: none;
+			    }
+			    .main_list{
+			    	padding-top: 30px;
+			    	
+			    	height: 260px;
+			    }
+			    .new_list{
+			    	height: 450px;
+			    
+			    	margin-top:0 ;
+			    	padding: 0;
+			    }
+			    #main3{
+			    	display: block;
+			    }
+			    .cltop{
+			    	display: none;
+			    }
+			}
+			
+			
 		</style>
 	</head>
 	<body>
-		<h1>This is my CV</h1>
-		<div class="d11"></div>
-		<div class="d22">
-			<table class="tdd" >
-				<thead>
-					<tr>
-						<td class="ps">个人信息</td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td >性别</td>
-					</tr>
-					<tr>
-						<td >性别</td>
-					</tr>
-					<tr>
-						<td >性别</td>
-					</tr>
-					<tr>
-						<td >性别</td>
-					</tr>
-				</tbody>
-			</table>
+		
+		
+		<header>
+			<div class="top" >
+				<a href="index.html"><img class="logo" src="img/main/logo.png" /></a>
+				<ul class="toplist">
+					<li><a href="index.html"><h2>游戏</h2>
+						<p>GAME </p>
+					</a></li>
+					<li><a href="hero.html"><h2>英雄</h2>
+						<p>CHAMPIONS</p>
+					</a></li>
+					<li><a href="shop.html"><h2>商城</h2>
+						<p>GAME SHOP</p>
+					</a></li>
+					<li><a href="event.html"><h2>赛事中心</h2>
+						<p>EVENT</p>
+					</a></li>
+				</ul>
+				<a href="login.html"><img class="load" src="img/main/load.png" /></a>
+			</div>
+			
+			<div class="m">
+				<video style="width: 100%;height: 40%;" src="vido/big-v6.mp4" autoplay loop></video>
+				
+				
+			</div>
+		</header>
+		
+			
+		<center>
+			<div class="cent">
+			    <div class="main_top1">
+			    	<ul>
+			    		<li><a href="index.html">综合资讯</a></li>
+			    		<li><a href="#">视频中心</a></li>
+			    		<li><a href="#">赛事中心</a></li>
+			    		<li><a href="#">活动中心</a></li>
+			    	</ul>
+			    </div>
+				<div class="main_banner">
+					<div id="banner">
+
+ 					 <div id="banner_bg"></div>
+
+  <!--标题背景-->
+
+ 					 <div id="banner_info"></div>
+
+  <!--标题-->
+
+  					<ul>
+
+ 					   <li name="1"class="on">大魔王任务</li>
+
+  					  <li name="2">末日人机智能</li>
+
+  					  <li name="3">全新禁用机制</li>
+					
+  					  <li name="4">LPL6月11日赛程</li>
+    
+ 					   <li name="5">jinoo乐观反向闪现</li>
+
+					  </ul>
+
+					  <div id="banner_list"> 
+
+  						<a href="#" target="_blank"><img src="img/main/1.jpg" title="" alt=" "/></a> 
+
+ 					   <a href="#" target="_blank"><img src="img/main/2.jpg" title=" " alt=" "/></a> 
+
+ 					   <a href="#" target="_blank"><img src="img/main/3.jpg" title=" " alt=" "/></a> 
+
+  					  <a href="#" target="_blank"><img src="img/main/4.jpg" title=" " alt=" "/></a> 
+    
+  					  <a href="#" target="_blank"><img src="img/main/5.jpg" title=" " alt=" "/></a> 
+
+ 					</div>
+
+					</div>
+				</div>
+				<div class="main_list">
+					<a class="dow" href="#" target="_blank"><img src="img/main/down.png" /></a>
+					<div class="lists">
+						<a href="#" target="_blank"><img src="img/main/list/down_03.jpg"/></a>
+						<a href="#" target="_blank"><img src="img/main/list/down_05.jpg"/></a>
+						<a href="#" target="_blank"><img src="img/main/list/down_07.jpg"/></a>
+						
+						<a href="#" target="_blank"><img src="img/main/list/down_13.jpg"/></a>
+						<a href="#" target="_blank"><img src="img/main/list/down_15.jpg"/></a>
+						<a href="#" target="_blank"><img src="img/main/list/down_17.jpg"/></a>
+						
+						<a href="#" target="_blank"><img src="img/main/list/down_22.jpg"/></a>
+						<a href="#" target="_blank"><img src="img/main/list/down_24.jpg"/></a>
+						
+						<a href="#" target="_blank"><img src="img/main/list/down_25.jpg"/></a>
+						
+						<a href="#" target="_blank"><img src="img/main/list/down_31.jpg"/></a>
+						<a href="#" target="_blank"><img src="img/main/list/down_34.jpg"/></a>
+						
+						<a href="#" target="_blank"><img src="img/main/list/down_35.jpg"/></a>
+						
+					</div>
+					 
+				</div>
+			    <div class="new_list">
+			    	<div class="main_top2">
+			    		<p>最新资讯</p>
+			    	<div class="main_top2_list">
+			    	<ul>
+			    		<li><a href="#">综合新闻</a></li>
+			    		<li><a href="#">官方公告</a></li>
+			    		<li><a href="#">赛事新闻</a></li>
+			    		<li><a href="#">论坛咨询</a></li>
+			    	</ul>
+			    	</div>
+			    	
+			        </div>
+			        <div class="news">
+			        	<a href="#" class="bignew">
+			        		<div class="bigg">
+			        		<img src="img/main/newpic.jpg"/>
+			        		<h1>WE碾压DAN登顶A组 IG让一追二复仇IM</h1>
+			        		<p>WE以2：0完胜DAN暂居A组头名，IG以2:1逆转击败IM。本周赛后，WE和OMG登顶AB组。
+</p></div>
+			        	</a>
+			        	<div class="elsenews">
+			        	<ul>
+			        		
+			        		<li><a href="#">
+			        			<div>
+			        				<div>
+			        					新闻
+			        				</div>
+			        				<p>
+			        					全新10禁机制上线
+			        				</p>
+			        				<span id="date">
+			        					06/11
+			        				</span>
+			        					
+			        			</div>
+			        		</a></li>
+			        		<li><a href="#">
+			        			<div>
+			        				<div>
+			        					新闻
+			        				</div>
+			        				<p>
+			        					LPL周日看点 Clearlove7能否重振EDG
+			        				</p>
+			        				<span id="date">
+			        					06/11
+			        				</span>
+			        					
+			        			</div>
+			        		</a></li>
+			        		<li><a href="#">
+			        			<div>
+			        				<div>
+			        					新闻
+			        				</div>
+			        				<p>
+			        					2016 SKT T1全球总决赛皮肤制作花絮
+			        				</p>
+			        				<span id="date">
+			        					06/11
+			        				</span>
+			        					
+			        			</div>
+			        		</a></li>
+			        		<li><a href="#">
+			        			<div>
+			        				<div>
+			        					新闻
+			        				</div>
+			        				<p>
+			        					末日人工智能模式卷土重来
+			        				</p>
+			        				<span id="date">
+			        					06/11
+			        				</span>
+			        					
+			        			</div>
+			        		</a></li>
+				        	<li><a href="#">
+				        		<div>
+			        				<div>
+			        					新闻
+			        				</div>
+			        				<p>
+			        					英雄联盟战术意识进阶教学
+			        				</p>
+			        				<span id="date">
+			        					06/11
+			        				</span>
+			        					
+			        			</div>
+				        	</a></li>
+			        		<li><a href="#">
+			        			<div>
+			        				<div>
+			        					新闻
+			        				</div>
+			        				<p>
+			        					夏火再燃自由出击 Jeep全程冠名LPL夏季赛
+			        				</p>
+			        				<span id="date">
+			        					06/11
+			        				</span>
+			        					
+			        			</div>
+			        		</a></li>
+				        	<li><a href="#">
+				        		<div>
+			        				<div>
+			        					新闻
+			        				</div>
+			        				<p>
+			        					今夏WE与OMG能否重返全球总决赛
+			        				</p>
+			        				<span id="date">
+			        					06/11
+			        				</span>
+			        					
+			        			</div>
+				        	</a></li>
+				        	<li><a href="#">
+			        			<div>
+			        				<div>
+			        					新闻
+			        				</div>
+			        				<p>
+			        					6月9日免费英雄更换公告
+			        				</p>
+			        				<span id="date">
+			        					06/11
+			        				</span>
+			        					
+			        			</div>
+			        		</a></li>
+			        		<li><a href="#">
+			        			<div>
+			        				<div>
+			        					新闻
+			        				</div>
+			        				<p>
+			        					最强王者夹克和徽章
+			        				</p>
+			        				<span id="date">
+			        					06/11
+			        				</span>
+			        					
+			        			</div>
+			        		</a></li>
+			        		<li><a href="#">
+			        			<div>
+			        				<div>
+			        					新闻
+			        				</div>
+			        				<p>
+			        					6月9日上午9:30不停机更新客户端公告
+			        				</p>
+			        				<span id="date">
+			        					06/11
+			        				</span>
+			        					
+			        			</div>
+			        		</a></li>
+				        
+			        	</ul>
+			        	</div>
+			        </div>
+			        
+			    </div>
+			    <div class="game_list">
+			    	
+			    	<div class="main_top2" id="main3">
+			    	
+			    	<ul>
+			    		<li><a href="#">周免英雄</a></li>
+			    		<li><a href="#">最新皮肤</a></li>
+			    		<li><a href="#">最新英雄</a></li>
+			    		
+			    	</ul>
+			        </div>
+			        <div class="hero_list">
+			        	<img src="img/main/freehero/0.jpg"/>
+			        	<img src="img/main/freehero/1.jpg"/>
+			        	<img src="img/main/freehero/2.jpg"/>
+			        	<img src="img/main/freehero/3.jpg"/>
+			        	<img src="img/main/freehero/4.jpg"/>
+			        	<img src="img/main/freehero/5.jpg"/>
+			        	<img src="img/main/freehero/69.jpg"/>
+			        	<img src="img/main/freehero/7.jpg"/>
+			        	<img src="img/main/freehero/8.jpg"/>
+			        	<img src="img/main/freehero/9.jpg"/>
+			        	
+			        </div>
+			        <div class="tms">
+			        	<a href=""><img src="img/main/freehero/tm.png"/></a>
+			        </div>
+			       
+			    </div>
+			</div>
+			 </center>
+		 
+		<footer>&nbsp;
+		<div class="footer">
+            
+			<div><p></p>COPYRIGHT © 1998 – 2017 TENCENT. ALL RIGHTS RESERVED.</p></div>
+			<div><p>腾讯公司 版权所有</p></div>
 		</div>
+		</footer>	
+		
+		
 	</body>
 </html>

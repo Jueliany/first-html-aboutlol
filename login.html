@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<meta name="KeyWords" content="英雄联盟">
+			<meta name="Author" content="陈志远">
+		<title>登录</title>
+		<script src="js/jquery-1.6.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+		<link rel="stylesheet" href="css/style.css">
+			<script language="javascript" src="js/login.js">
+
+</script>
+			<link rel="stylesheet" href="css/login.css" />
+	</head>
+	<body >
+		
+				<header>
+			<div class="top" >
+				<a href="index.html"><img class="logo" src="img/main/logo.png" /></a>
+				<ul class="toplist">
+					<li><a href="index.html"><h2>游戏</h2>
+						<p>GAME </p>
+					</a></li>
+					<li><a href="hero.html"><h2>英雄</h2>
+						<p>CHAMPIONS</p>
+					</a></li>
+					<li><a href="shop.html"><h2>商城</h2>
+						<p>GAME SHOP</p>
+					</a></li>
+					<li><a href="event.html"><h2>赛事中心</h2>
+						<p>EVENT</p>
+					</a></li>
+				</ul>
+				<a href="login.html"><img class="load" src="img/main/load.png" /></a>
+			</div>
+			</header>
+			<center>
+				<div class="loginin">
+					<form >
+						<table>
+							<thead>
+								<tr><th colspan="3"><img src="img/herologo.png"/><p>&nbsp;登录帐号</p></th></tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>用户名</td>
+									<td>
+										<div>用户名</div>
+										<input type="text" id="user"/>
+									</td>
+									<td><div>  </div></td>
+								</tr>
+								<tr>
+									<td>密码</td>
+									<td>
+										<div>密码</div>
+										<input type="password" id="password"/></td>
+									<td><div>  </div></td>
+								</tr>
+								<tr>
+									<td>验证码</td>
+									<td>
+										<div>验证码</div>
+										<input id="yzm" type="text" /> 
+										<input type="text" name="checkCode" value="点击获取" onClick="createCode(5);" readonly="readonly" id="checkCode" class="unchanged" style="border-radius:0px;margin-left: 1em; width:5em; height:1.2em;background-color:#0F0"/> </td>
+									<td><div>  </div></td>
+								</tr>
+								</tbody>
+								</tfoot>
+								<tr>
+									<td>
+									</td>
+								<td>
+									<button  id="submit" onclick="log()" >  登 录  </button>
+									<button type="button" onclick=window.open('register.html','_self')>注册新用户 </button>
+								</td></tr>
+							</tfoot>
+						</table>
+						
+					</form>
+					
+				</div>
+			</center>
+			<div class="music"> 
+				<audio class="bgm" autoplay="autoplay" controls="controls"loop="loop" preload="auto"
+            src="music/Mark Petrie - Go Time.mp3">
+      你的浏览器不支持audio标签
+</audio>
+			</div>
+		
+			<footer>&nbsp;
+		
+		</footer>	
+		
+	
+	</body>
+</html>
